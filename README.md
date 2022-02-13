@@ -7,6 +7,32 @@ José Ramón Martínez Batlle
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+## Actualización 13 de febrero de 2022
+
+Aunque no he podido dedicar mucho tiempo para hacer una actualización
+más profunda, la imagen Sentinel 2 adquirida el 12 de febrero (ayer)
+muestra que la superficie total afectada podría superar los 100
+km<sup>2</sup>. Calculé unos 140 km<sup>2</sup>, pero se trata de una
+estimación exagerada; estimo que el área final afectada se encontrará
+entre los 100 km<sup>2</sup> y los 140 km<sup>2</sup>.
+
+![Áreas afectadas por el incendio vista en imagen Sentinel 2 de 12 de
+febrero de 2022](areas-afectadas-sentinel-2-20220212.jpg)
+
+Destaco lo siguiente:
+
+-   El área al norte de Pelempito (oeste de la depresión de río Arriba,
+    norte de Aceitillar), quedó bajo nubosidad en esta imagen, por lo
+    que la incertidumbre en dicha área es mayor que en la occidental.
+
+-   Afortunadamente, una buena parte del área encerrada como “afectada”,
+    presenta (a simple vista en las imágenes) severidad muy baja de
+    quemado (sigo a la espera de poder hacer un análisis detallado de
+    severidad de quemado).
+
+-   Un área quemada “lineal”, de dirección sudoeste-nordeste, se hace
+    visible en el sector occidental de Bahoruco.
+
 ## Estimación de superficie afectada por medio de interpretación visual
 
 <img src="gif.gif" style="width:75.0%" />
