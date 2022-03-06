@@ -1,8 +1,8 @@
 ---
 title: "Incendio de enero de 2022 en sierra de Bahoruco, República Dominicana"
 author: José Ramón Martínez Batlle
-output: github_document
-# output: html_document
+# output: github_document
+output: html_document
 editor_options: 
   chunk_output_type: console
 ---
@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 
 ## Actualización 5 de marzo de 2022: Severidad de quemado mediante razón de quema normalizada diferencial (dNBR)
 
-Nota: mapa interactivo en la [versión HTML](https://geofis.github.io/fuego-bahoruco-202201/README.html) de este documento.
+<!-- Nota: mapa interactivo en la [versión HTML](https://geofis.github.io/fuego-bahoruco-202201/README.html) de este documento. -->
 
 Usando escenas Landsat 9 (prefuego, 30/dic/2021) y Landsat 8 (posfuego, 24/feb/2022), y aplicando una versión modificada del [*script* Google Earth Engine de UN-Spider "BURN SEVERITY MAPPING USING THE NORMALIZED BURN RATIO (NBR)"](https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/burn-severity-earth-engine), realicé un análisis de la severidad de quemado en dicho incendio usando el diferencial del índice normalizado de quema (dNBR). Adapté el *script* fuente a la colección más reciente de imágenes Landsat 8 y 9. La web está repleta de recursos sobre esta técnica, recomiendo [esta particularmente](https://un-spider.org/es/node/10959). Como resultado del análisis aplicado a la sierra de Bahoruco, estimé unos 85 km<sup>2</sup> de superficie quemada, predominantemente de baja severidad. A continuación, muestro el código de análisis y visualización de R.
 
@@ -104,7 +104,7 @@ colores <- c("yellow2", "orange2", "#ff5425", "#d7191c")
 
 ### Mapa con leaflet
 
-- Versión interactiva [aquí](https://geofis.github.io/fuego-bahoruco-202201/README.html)
+<!-- - Versión interactiva [aquí](https://geofis.github.io/fuego-bahoruco-202201/README.html) -->
 
 ```{r}
 leaflet() %>%
