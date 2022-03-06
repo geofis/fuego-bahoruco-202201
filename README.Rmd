@@ -24,10 +24,7 @@ knitr::opts_chunk$set(
 
 Nota: mapa interactivo en la [versión HTML](https://geofis.github.io/fuego-bahoruco-202201/README.html) de este documento.
 
-
-Usando escenas Landsat 9 (prefuego, 30/dic/2021) y Landsat 8 (posfuego, 24/feb/2022), y aplicando una versión modificada del [*script* Google Earth Engine de UN-Spider "BURN SEVERITY MAPPING USING THE NORMALIZED BURN RATIO (NBR)"](https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/burn-severity-earth-engine), realicé un análisis de la severidad de quemado en dicho incendio usando el diferencial del índice normalizado de quema (dNBR). Adapté el *script* fuente a la colección más reciente de imágenes Landsat 8 y 9.
-
-La web está repleta de recursos sobre esta técnica, recomiendo [esta particularmente](https://un-spider.org/es/node/10959). Como resultado del análisis aplicado a la sierra de Bahoruco, estimé unos 85 km<sup>2</sup> de superficie quemada, predominantemente de baja severidad. A continuación, muestro el código de análisis y visualización de R.
+Usando escenas Landsat 9 (prefuego, 30/dic/2021) y Landsat 8 (posfuego, 24/feb/2022), y aplicando una versión modificada del [*script* Google Earth Engine de UN-Spider "BURN SEVERITY MAPPING USING THE NORMALIZED BURN RATIO (NBR)"](https://un-spider.org/advisory-support/recommended-practices/recommended-practice-burn-severity/burn-severity-earth-engine), realicé un análisis de la severidad de quemado en dicho incendio usando el diferencial del índice normalizado de quema (dNBR). Adapté el *script* fuente a la colección más reciente de imágenes Landsat 8 y 9. La web está repleta de recursos sobre esta técnica, recomiendo [esta particularmente](https://un-spider.org/es/node/10959). Como resultado del análisis aplicado a la sierra de Bahoruco, estimé unos 85 km<sup>2</sup> de superficie quemada, predominantemente de baja severidad. A continuación, muestro el código de análisis y visualización de R.
 
 ### Paquetes
 
@@ -128,8 +125,8 @@ leaflet() %>%
     values = slot(dnbr_rcl_q@data, 'attributes')[[1]]$leyenda,
     position = 'bottomright') %>% 
   setView(
-    lat = mean(extent(dnbr)[3:4])-0.05,
-    lng = mean(extent(dnbr)[1:2]), zoom=11) %>% 
+    lat = mean(extent(dnbr)[3:4])-0.1,
+    lng = mean(extent(dnbr)[1:2]), zoom=10) %>% 
   suppressWarnings()
 ```
 

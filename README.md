@@ -21,7 +21,6 @@ BURN RATIO
 realicé un análisis de la severidad de quemado en dicho incendio usando
 el diferencial del índice normalizado de quema (dNBR). Adapté el
 *script* fuente a la colección más reciente de imágenes Landsat 8 y 9.
-
 La web está repleta de recursos sobre esta técnica, recomiendo [esta
 particularmente](https://un-spider.org/es/node/10959). Como resultado
 del análisis aplicado a la sierra de Bahoruco, estimé unos 85
@@ -140,8 +139,8 @@ leaflet() %>%
     values = slot(dnbr_rcl_q@data, 'attributes')[[1]]$leyenda,
     position = 'bottomright') %>% 
   setView(
-    lat = mean(extent(dnbr)[3:4])-0.05,
-    lng = mean(extent(dnbr)[1:2]), zoom=11) %>% 
+    lat = mean(extent(dnbr)[3:4])-0.1,
+    lng = mean(extent(dnbr)[1:2]), zoom=10) %>% 
   suppressWarnings()
 ```
 
